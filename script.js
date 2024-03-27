@@ -1,6 +1,7 @@
 //TASK 1
 //print odd numbers in an Array
-var res=[];
+//anonymous
+/*var res=[];
 var a=function(arr)
 {
     for(var i=0;i<arr.length;i++)
@@ -11,9 +12,9 @@ var a=function(arr)
     }}
     return res;
     }
-console.log(a([1,2,3,4,5]));
+console.log(a([1,2,3,4,5]));*/
   
-2.
+/*2.IIFE
  var res1=[];
 (function(arr)
 {
@@ -23,151 +24,180 @@ console.log(a([1,2,3,4,5]));
     {
         res1.push(arr[i]);
     }}
-console.log(result);}
-    ([1,2,3,4,5]));
+console.log(res1);
+   }) ([1,2,3,4,5]);*/
 
-3. 
-  var res1=[];
- var  odd=(arr)=>{
+/*3. arrow
+ var res1=[];
+ var  odd=(arr)=>
 {
     for(var i=0;i<arr.length;i++)
     {
     if(arr[i]%2!==0)
     {
         res1.push(arr[i]);
-    }}return result;
-
-console.log(odd([1,2,3,4,5]));
-    
-//convert all strings in titlecase
-1.var a=function(str)
-{
-    str = str.toLowerCase().split(' ');
-    for (var i = 0; i < str.length; i++) {
-      str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
-    }
-    return str.join(' ');
-  {}
-  console.log(toTitleCase("welcome to javascript"));
-
- 2.   (function(str)
-    {
-    str = str.toLowerCase().split(' ');
-    for (var i = 0; i < str.length; i++) {
-      str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
-    }
-    return str.join(' ');
-  })
-  console.log(toTitleCase("welcome to javascript"));
-
-  3. var a=(str)=>{
-    str = str.toLowerCase().split(' ');
-    for (var i = 0; i < str.length; i++) {
-      str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
-    }
-    return str.join(' ');
+    }}
+    return res1;
   }
-  console.log(toTitleCase("welcome to javascript"));
+   console.log(odd([1,2,3,4,5]));*/
 
-//sum of all numbers in an array
+//convert string into titlecase
 
-var b=function(arr)
+//anonymous
+/*var a=function(str)
 {
-let sum = 0;
-for (let i = 0; i < arr.length; i++) {
-  sum += arr[i];
+  str=str.toLowerCase().split(" ");
+  for(var i=0;i<str.length;i++)
+  {
+    str[i]=str[i].charAt(0).toUpperCase()+str[i].slice(1);
+  }
+  return str.join(" ");
 }
+    console.log(a("javascript is a  programming language"));*/
 
-}
-console.log(b[1,2,3,5,7,10]);
-
-
-(function(arr)
+//IIFE
+   /* (function(str)
 {
-let sum = 0;
-for (let i = 0; i < arr.length; i++) {
-  sum += arr[i];
-}
-
+  str=str.toLowerCase().split(" ");
+  for(var i=0;i<str.length;i++)
+  {
+    str[i]=str[i].charAt(0).toUpperCase()+str[i].slice(1);
+  }
+  str.join(" ");
 })
+  console.log("javascript is a  programming language");*/
+
+  //arrow
+
+ /*var titlecase= (str)=>
+{
+  str=str.toLowerCase().split(" ");
+  for(var i=0;i<str.length;i++)
+  {
+    str[i]=str[i].charAt(0).toUpperCase()+str[i].slice(1);
+  }
+  return str.join(" ");
+}
+  console.log("javascript is a  programming language");*/
+
+//sum of elements in an array
+//anonymous
+
+/*var a=function(arr)
+{
+  var sum=0;
+  for(var i=0;i<arr.length;i++)
+  {
+    sum+=arr[i];
+}
+return sum;}
+console.log(a([1,3,5,6,7,8]));*/
+//iife
+
+/*(function(arr)
+{
+  var sum=0;
+  for(var i=0;i<arr.length;i++)
+  {
+    sum+=arr[i];
+  }
 console.log(sum);
+})
+([1,3,5,6,7,8]);*/
+//arrow
 
-var b=(arr=>{
-
-let sum = 0;
-for (let i = 0; i < arr.length; i++) {
-  sum += arr[i];
+/*var sum=(arr)=>
+{
+  var sum=0;
+  for(var i=0;i<arr.length;i++)
+  {
+    sum+=arr[i];
+  }return sum;
 }
-}
-console.log(b[1,2,3,5,7,10]);
-
-//return palindrome in an array
-
-var c=function (str) 
-{ 
-    return str == str.split('').reverse().join('');
-{
-
-const result = words.filter(word => checkPalindrom(word)); 
-
-}}
-
-(function (str) 
-{ 
-    return str == str.split('').reverse().join('');
-{
-
-const result = words.filter(word => checkPalindrom(word)); 
-
-}})
-
-var c=(str) =>
-{ 
-    return str == str.split('').reverse().join('');
-{
-
-const result = words.filter(word => checkPalindrom(word)); 
-
-}}
+console.log(sum([1,3,5,6,7,8]));*/
 
 //prime numbers in an array
-
-var a=function(arr)
-        return false; 
+//anonymous
+/*var res=[];
+var num=function(arr)
 {
-    for (let i = 2; i < n; i++) 
-        if (n % i == 0) 
-            return false; 
+for(var i=2;i<arr.length;i++)
+{
+  if(num%2===0&&num%1===0)
+{
+  res.push(num[i]);
+}}
+return res;
+}
+console.log(num([1,3,4,5,8,9]));*/
 
-    return true; 
-} }
-
-
+/*var res=[];
 (function(arr)
-        return false; 
 {
-    for (let i = 2; i < n; i++) 
-        if (n % i == 0) 
-            return false; 
-
-    return true; )
-} }
-
-var a=(arr)=>{
-        return false; 
+for(var i=2;i<arr.length;i++)
 {
-    for (let i = 2; i < n; i++) 
-        if (n % i == 0) 
-            return false; 
+  if(num%2===0&&num%1===0)
+{
+  res.push(num[i]);
+}}
 
-    return true; )
-} }
+console.log(res)});
+([1,3,4,5,8,9]);*/
 
+/*var a=(arr)=>
+{
+for(var i=2;i<arr.length;i++)
+{
+  if(num%2===0&&num%1===0)
+{
+  res.push(num[i]);
+}}
+return res;}
+console.log(a([1,3,4,5,8,9]));*/
 
+//palindrome in an array
 
+//anonymous
+/*var a=function(str)
+{
+var rev=str.split("").reverse().join("");
+if(rev==str)
+{
+  return true;
 
+}
+else{
+  return false;
+}}
+let str1="dad";
+console.log(a(str1));*/
 
+//IIFE
 
+/*(function(str)
+{
+var rev=str.split("").reverse().join("");
+if(rev==str)
+{
+console.log(str);
+}
+})
+let str1="dad";
+console.log(str1)*/
 
+//arrow function
+/*var a=(str)=>
+{
+var rev=str.split("").reverse().join("");
+if(rev==str)
+{
+  return true;
+
+}
+else{
+  return false;
+}}
+let str1="dad";
+console.log(a(str1));*/
 
 
